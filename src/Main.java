@@ -30,8 +30,8 @@ public class Main {
         int deathRatePerThousand = 8;
         int year = 1;
         while (year <= 10) {
-            System.out.println("Год " + year + ", численность населения составляет " + populationY);
             populationY = populationY + (birthRatePerThousand * populationY / 1000) - (deathRatePerThousand * populationY / 1000);
+            System.out.println("Год " + year + ", численность населения составляет " + populationY);
             year++;
         }
 
